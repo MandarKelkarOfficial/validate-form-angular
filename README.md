@@ -1,6 +1,27 @@
 # ValidateForm
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Validation form Using Angular:
+
+![App](/src/assets/img/form.png)
+*Figure 1: Form Validation Form*
+
+
+## New Features
+
+### Form Validation
+
+The ValidateForm project includes robust form validation mechanisms to ensure data integrity and user input correctness. The validation model checks for required fields, email formats, password strength, and other custom validation rules.
+
+![Form Validation](/src/assets/img/register.png)
+*Figure 1: Form Validation Form*
+
+### Routing
+
+The project also features a comprehensive routing model that allows users to navigate seamlessly between different sections of the application. The routing module is configured to handle various routes, including lazy-loaded modules and protected routes with guards.
+
+![Routing Model](path/to/routing_model_image.png)
+*Figure 2: Routing Model Setup*
 
 ## Development server
 
