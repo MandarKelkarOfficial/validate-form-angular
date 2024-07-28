@@ -1,0 +1,106 @@
+<!-- <div class="container mt-5 w-50">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <h1 class="text-center">REGISTER</h1>
+
+    <div class="form-floating mb-3">
+      <input type="text" formControlName="username"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['username'].errors}" class="form-control"
+        id="floatingInput" placeholder="Enter Username" name="username">
+      <label for="floatingInput">Username</label>
+      <div *ngIf="submitted && registerForm.controls['username'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['username'].errors['required']">Username is required.</div>
+        <div *ngIf="registerForm.controls['username'].errors['minlength']">Username must be at least 5 characters.</div>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="email" formControlName="email"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['email'].errors}" class="form-control"
+        id="floatingInput" placeholder="Enter Email" name="email">
+      <label for="floatingInput">Email</label>
+      <div *ngIf="submitted && registerForm.controls['email'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['email'].errors['required']">Email is required.</div>
+        <div *ngIf="registerForm.controls['email'].errors['email']">Invalid email format.</div>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" formControlName="password"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['password'].errors}" class="form-control"
+        id="floatingPassword" placeholder="Password" name="password">
+      <label for="floatingPassword">Password</label>
+      <div *ngIf="submitted && registerForm.controls['password'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['password'].errors['required']">Password is required.</div>
+        <div *ngIf="registerForm.controls['password'].errors['minlength']">Password must be at least 8 characters.</div>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" formControlName="cpassword"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['cpassword'].errors}" class="form-control"
+        id="floatingPassword" placeholder="Confirm Password" name="cpassword">
+      <label for="floatingPassword">Confirm Password</label>
+      <div *ngIf="submitted && registerForm.controls['cpassword'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['cpassword'].errors['required']">Confirm Password is required.</div>
+      </div>
+    </div>
+
+    <div class="buttons d-flex justify-content-center align-items-center gap-3 mt-4">
+      <button type="submit" class="btn btn-outline-primary w-100">REGISTER</button>
+      <button type="button" class="btn btn-outline-primary w-100" routerLink="/">LOGIN</button>
+    </div>
+  </form>
+</div> -->
+
+<div class="container mt-5 w-50">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <h1 class="text-center">REGISTER</h1>
+
+    <div class="form-floating mb-3">
+      <input type="text" formControlName="username"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['username'].errors}" class="form-control"
+        id="floatingInput" placeholder="Enter Username" name="username">
+      <label for="floatingInput">Username</label>
+      <div *ngIf="submitted && registerForm.controls['username'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['username'].errors['required']">Username is required.</div>
+        <div *ngIf="registerForm.controls['username'].errors['minlength']">Username must be at least 5 characters.</div>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="email" formControlName="email"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['email'].errors}" class="form-control"
+        id="floatingInput" placeholder="Enter Email" name="email">
+      <label for="floatingInput">Email</label>
+      <div *ngIf="submitted && registerForm.controls['email'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['email'].errors['required']">Email is required.</div>
+        <div *ngIf="registerForm.controls['email'].errors['email']">Invalid email format.</div>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3">
+      <input type="password" formControlName="password"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['password'].errors}" class="form-control"
+        id="floatingPassword" placeholder="Password" name="password">
+      <label for="floatingPassword">Password</label>
+      <div *ngIf="submitted && registerForm.controls['password'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['password'].errors['required']">Password is required.</div>
+        <div *ngIf="registerForm.controls['password'].errors['minlength']">Password must be at least 8 characters.</div>
+      </div>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" formControlName="cpassword"
+        [ngClass]="{'is-invalid': submitted && registerForm.controls['cpassword'].errors}" class="form-control"
+        id="floatingPassword" placeholder="Confirm Password" name="cpassword">
+      <label for="floatingPassword">Confirm Password</label>
+      <div *ngIf="submitted && registerForm.controls['cpassword'].errors" class="invalid-feedback">
+        <div *ngIf="registerForm.controls['cpassword'].errors['required']">Confirm Password is required.</div>
+        <div *ngIf="registerForm.controls['cpassword'].errors?.['notSame']">Passwords do not match.</div>
+      </div>
+    </div>
+    <div class="buttons d-flex justify-content-center align-items-center gap-3 mt-4">
+      <button type="submit" class="btn btn-outline-primary w-100">REGISTER</button>
+      <button type="button" class="btn btn-outline-primary w-100" routerLink="/">LOGIN</button>
+    </div>
+  </form>
+</div>
